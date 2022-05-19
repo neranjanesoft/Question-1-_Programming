@@ -5,7 +5,7 @@ const args = require('yargs').argv;
 var cryptoCompare;
 var usdValues;
 
-// function to get the latest portfolio value per token in USD
+// To get the latest portfolio value per token in USD
 var getLatestValPerTokenInUSD = function () {
     return new Promise(function (resolve) {
         
@@ -74,7 +74,7 @@ var getLatestValPerTokenInUSD = function () {
         });
     });
 }
-//function to get the portfolio value per token in USD
+//To get the portfolio value per token in USD
 var getPortfolioValPerToken = function () {
     console.log("cyptoLatest-->getPortfolioValPerToken");
     console.log("Date",args.date);
@@ -135,7 +135,7 @@ var getPortfolioValPerToken = function () {
     });
 }
 
-// function to fetch the USD Values from CryptoCompare
+// To fetch the USD Values from CryptoCompare
 function getUSDValues() {
 
     var cryptoURL = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH,DASH&tsyms=BTC,USD,EUR&api_key=3789ea397be622354552b3ab2a826e4379b5da952de997d3cff964ed4f0786ee';
@@ -181,7 +181,7 @@ function filterByProperty(array, prop, value){
 
 }
 
-// based on the type of the parameters we pass as cmd, corresponding function will be called
+// Based on the type of the parameters, corresponding function
 if(args.token === undefined && args.date === undefined){
     console.log("Given no parameters, return the latest portfolio value per token in USD");
   getLatestValPerTokenInUSD().then(function (result) { console.log(result); });
