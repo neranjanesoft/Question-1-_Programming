@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "await": "^0.2.6",
+    "parser": "^0.1.4",
+    "promise": "^8.1.0",
+    "request": "^2.88.2",
+    "yargs": "^17.5.1"
+  }
+}
