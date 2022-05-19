@@ -2,11 +2,11 @@
 
 Install the below dependencies: 
 
-npm install request 
-npm install promise
-npm install parser
-npm install await
-npm install yargs
+1. npm install request 
+2. npm install promise
+3. npm install parser
+4. npm install await
+5. npm install yargs
 
 
 
